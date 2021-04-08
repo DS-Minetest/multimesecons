@@ -177,6 +177,7 @@ local digiline_def_emitter_on = {
 mesecon.register_node("multimesecons:receiver", {
 	description = "Multimesecons Receiver",
 	drawtype = "nodebox",
+	use_texture_alpha = minetest.features.use_texture_alpha_string_modes and "opaque" or nil,
 	drop = "multimesecons:receiver_off",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -224,6 +225,7 @@ mesecon.register_node("multimesecons:receiver", {
 mesecon.register_node("multimesecons:emitter", {
 	description = "Multimesecons Emitter",
 	drawtype = "nodebox",
+	use_texture_alpha = minetest.features.use_texture_alpha_string_modes and "opaque" or nil,
 	drop = "multimesecons:emitter_off",
 	paramtype = "light",
 	paramtype2 = "facedir",
